@@ -1,32 +1,32 @@
 #
 # Conditional build:
 %bcond_with	tests		# build with tests
-%define		kdeappsver	25.08.2
+%define		kdeappsver	25.08.3
 %define		qtver		6.8
 %define		kaname		telly-skout
 Summary:	TV guide based on Kirigami
 Name:		ka6-%{kaname}
-Version:	25.08.2
-Release:	2
+Version:	25.08.3
+Release:	1
 License:	GPL v2+
 Group:		X11/Applications
 Source0:	https://download.kde.org/stable/release-service/%{kdeappsver}/src/%{kaname}-%{version}.tar.xz
-# Source0-md5:	a29ee2810c3c655785d24a7577d48550
+# Source0-md5:	f64b885e02d7423c4a20e5dfae496124
 URL:		https://kde.org/
 BuildRequires:	Qt6Core-devel >= %{qtver}
 BuildRequires:	Qt6Gui-devel >= 5.11.1
 BuildRequires:	Qt6Widgets-devel
 BuildRequires:	cmake >= 3.20
 BuildRequires:	gettext-tools
-BuildRequires:	kf6-extra-cmake-modules >= 6.4.0
-BuildRequires:	python3
-BuildRequires:	kf6-kcoreaddons-devel >= 6.4.0
-BuildRequires:	kf6-kconfig-devel >= 6.4.0
 BuildRequires:	gettext-tools
+BuildRequires:	kf6-extra-cmake-modules >= 6.4.0
+BuildRequires:	kf6-kconfig-devel >= 6.4.0
+BuildRequires:	kf6-kcoreaddons-devel >= 6.4.0
 BuildRequires:	kf6-ki18n-devel >= 6.4.0
 BuildRequires:	kf6-kirigami-addons-devel
 BuildRequires:	kf6-qqc2-desktop-style-devel >= 6.4.0
 BuildRequires:	ninja
+BuildRequires:	python3
 BuildRequires:	qt6-build >= %{qtver}
 BuildRequires:	rpmbuild(macros) >= 1.164
 BuildRequires:	shared-mime-info
