@@ -1,17 +1,16 @@
-#
 # Conditional build:
 %bcond_with	tests		# build with tests
-%define		kdeappsver	25.12.0
+%define		kdeappsver	25.12.1
 %define		qtver		6.8
 %define		kaname		telly-skout
 Summary:	TV guide based on Kirigami
 Name:		ka6-%{kaname}
-Version:	25.12.0
+Version:	25.12.1
 Release:	1
 License:	GPL v2+
 Group:		X11/Applications
 Source0:	https://download.kde.org/stable/release-service/%{kdeappsver}/src/%{kaname}-%{version}.tar.xz
-# Source0-md5:	c695d6a866730895a10bc0a267e04b4b
+# Source0-md5:	f3fd8b4d82d7d189f4cb17202d9f5a5c
 URL:		https://kde.org/
 BuildRequires:	Qt6Core-devel >= %{qtver}
 BuildRequires:	Qt6Gui-devel >= 5.11.1
