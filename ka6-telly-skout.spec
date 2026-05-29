@@ -37,7 +37,12 @@ Obsoletes:	ka5-%{kaname} < %{version}
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-A convergent TV guide based on Kirigami.
+Telly Skout is a convergent Kirigami TV guide. It shows the TV program
+for your favorite channels from TV Spielfilm or an XMLTV file.
+
+%description -l pl.UTF-8
+Telly Skout to zbieżny przegląd programów TV. Pokazuje program TV dla
+twoich ulubionych kanałów ze TV Spielfilm lub pliku XMLTV.
 
 %prep
 %setup -q -n %{kaname}-%{version}
